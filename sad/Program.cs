@@ -11,7 +11,7 @@ namespace sad
         static void Main(string[] args)
         {
             //создание массива
-            string[] A = new string[3] { "Опель", "Мерседс", "Aуди" };
+           /* string[] A = new string[3] { "Опель", "Мерседс", "Aуди" };
 
             //поменяли в масиве певый элемент и индексом 0
             A[0] = "БМВ";
@@ -28,8 +28,20 @@ namespace sad
             B[2] = A[0];
             Console.WriteLine(B[0]);
             Console.WriteLine(B[1]);
-            Console.WriteLine(B[2]);
+            Console.WriteLine(B[2]);*/
 
+            //массив с переменными
+            int[] C = new int[10000];
+            for (int d = 0; d < C.Length; d++)
+            {
+                C[d] = 1 + d; 
+            }
+            Console.WriteLine("[");
+            for (int d = 0; d < C.Length; ++d) 
+            {
+                Console.WriteLine(C[d] + ", ");
+            }
+            Console.WriteLine(C.Length + "]");
         }
     }
 }
